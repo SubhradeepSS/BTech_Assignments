@@ -1,0 +1,2 @@
+1. Server starts and establishes socket.
+2. Client accepts the connection and send "Hello" message to server

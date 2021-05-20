@@ -1,0 +1,1 @@
+Write a program to find the maximum size subset whose sum is equal to a given positive integer d of a given set S = s1, s2, …sn of n positive integers. For example, if S = 0,1,2,5,6, 8 and d = 9 there are two possible solutions {0,1, 2, 6} and {0, 1, 8} and the maximum size subset is the first one.

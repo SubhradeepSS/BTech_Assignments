@@ -1,0 +1,4 @@
+1. Server starts
+2. Client connects
+3. Client is asked type of trigonometry operation(sin/cos/tan) and then the angle(in degrees)
+4. Output is displayed in both server and client.

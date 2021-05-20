@@ -1,0 +1,4 @@
+1. First we need to run the server output file which will start the socket connection
+2. Then we start the client output file which accepts the connection.
+3. The client is asked the type of arithmetic operation(+,-,/*) and then the operands
+4. The calculation is done and then displayed on both server and client side.

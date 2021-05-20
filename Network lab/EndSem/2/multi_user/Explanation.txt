@@ -1,0 +1,4 @@
+1. Server starts
+2. 3 Clients are connected
+3. The clients are asked cyclically to enter their message which will be sent to all the other clients.
+4. The server keeps a record of all the messages being sent by the clients

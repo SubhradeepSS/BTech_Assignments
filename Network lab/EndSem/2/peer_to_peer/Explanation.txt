@@ -1,0 +1,5 @@
+1. Peer2 starts connection
+2. Peer1 accepts connection and then sends message
+3. Peer2 accepts the message, displays it and then asked to send its own message.
+4. Peer1 accepts the message, displays it and then again asked to send a message.
+5. In this way, the messages are being exchanged alternately till the program is stopped.

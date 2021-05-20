@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/show_all"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Show all"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/show_one"
+        android:icon="@drawable/ic_launcher_foreground_1"
+        android:title="Show One"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/edit_one"
+        android:icon="@drawable/ic_launcher_foreground_2"
+        android:title="Update One"
+        app:showAsAction="always" />
+
+</menu>
