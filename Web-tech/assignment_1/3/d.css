@@ -1,0 +1,28 @@
+body
+{
+    background: white;
+    color: black;
+}
+
+input
+{
+    background: white;
+    color: black;
+    border: black;
+}
+
+a:link
+{
+    color: blue;
+}
+
+a:visited
+{
+    color: purple;
+}
+
+a:active
+{
+    color: red;
+}
+

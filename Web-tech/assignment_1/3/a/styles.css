@@ -1,0 +1,26 @@
+p {
+    margin-top: 30px;
+}
+
+#divThickGroove {
+    border: thick groove;
+}
+
+#divMediumGroove {
+    border: medium groove;
+}
+
+#divThinGroove {
+    border: thin groove;
+}
+
+#divThinRedInset {
+    border: thin red inset;
+}
+
+#divMediumBlueOutset {
+    border: medium blue outset;
+}
+
+
+

@@ -1,0 +1,10 @@
+h1, h2 {
+    font-size: 22pt; /* Setting font size as 22pt */
+    color: green; /* Setting color as green */
+    font-family: "Times New Roman", Times, serif; /* Setting font as Times New Roman */
+}
+
+p {
+    font-size: 12pt; /* Setting font size as 12pt */
+    font-family: "Times New Roman", Times, serif; /* Setting font as Times New Roman */
+}
