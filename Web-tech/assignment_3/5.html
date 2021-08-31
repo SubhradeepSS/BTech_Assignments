@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea name="" id="" cols="30" rows="10">
+        Following are the Prime numbers from 1 to 100: 
+    </textarea>
+    <script>
+        let x = parseInt(window.prompt('Enter a number: '))
+        function isPrime (num) {
+            for (let i = 2, s = Math.sqrt(num); i <= s; i++)
+                if (num % i === 0) return false;
+            return num > 1;
+        }
+
+        if(isPrime(x)) {
+            alert(`${x} is a prime number`)
+        }
+        else {
+            alert(`${x} is not a prime number`)
+        }
+
+        let txtarea = document.getElementsByTagName('textarea')[0]
+
+        for(let i=1; i<=100; i++){
+            if(isPrime(i)) {
+                txtarea.innerHTML += i.toString() + " "
+            }
+        }
+    </script>
+</body>
+
+</html>
