@@ -13,11 +13,11 @@
 
 %%
 
-S: E { printf("Output: %d",top()); };
+S: E { printf("Output of expression: %d\n",top()); };
 E:	E E '+' { push(pop() + pop()); } |
-	E E '-' { push(pop() - pop()); } |
+	E E '-' { int t=pop(); push(pop() - t); } |
 	E E '*' { push(pop() * pop()); } |
-	E E '/' { push(pop() / pop()); } |
+	E E '/' { int t=pop(); push(pop() / t); } |
 	NUMBER { push(yylval); };	
 
 %%

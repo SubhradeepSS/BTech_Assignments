@@ -9,7 +9,7 @@ echo "Output for valid input:"
 
 echo ;
 
-# echo "Output for invalid input:"
-# ./a.out < incorrect_input.txt
+echo "Output for invalid input:"
+./a.out < incorrect_input.txt
 
 echo ;

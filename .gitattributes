@@ -1,2 +1,11 @@
 *.sql linguist-detectable=true
 *.sql linguist-language=tsql
+
+*.l linguist-detectable=true
+*.l linguist-language=lex
+
+*.y linguist-detectable=true
+*.y linguist-language=yacc
+
+*.sh linguist-detectable=true
+*.sh linguist-language=shell

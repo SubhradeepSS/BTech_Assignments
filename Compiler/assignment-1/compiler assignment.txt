@@ -17,7 +17,7 @@ Write a LEX program to do the following (Separate programs) (Any FOUR)
 
 Write a YACC program to do the following: 
 
-1. Evaluate the postfix expression 
+1. ✅Evaluate the postfix expression 
 2. ✅Validate the if-else - if construct
 3. ✅Validate the switch-case construct
 4. Validate the PASCAL syntax repeat - until
