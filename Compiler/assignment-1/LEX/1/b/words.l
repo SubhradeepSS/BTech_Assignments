@@ -8,14 +8,17 @@
 
 [a-zA-Z]*[aeiouAEIOU][a-zA-Z]*[t][a-zA-Z]*[aeiouAEIOU][a-zA-Z]*  {
   count++;
+  printf("%s\n", yytext);
 }
 
 [a-zA-Z]*[aeiouAEIOU][a-zA-Z]*[t][a-zA-Z]*  {
   count++;
+  printf("%s\n", yytext);
 }
 
 [a-zA-Z]*[t][a-zA-Z]*[aeiouAEIOU][a-zA-Z]*  {
   count++;
+  printf("%s\n", yytext);
 }
 
 . {}
@@ -28,6 +31,7 @@ int yywrap(){
 }
 
 int main() {
+  printf("\n\nFollowing are the required words:\n");
   yylex();
-  printf("\n\n%d words have at least 1 vowel and the letter 't'\n", count);
+  printf("\n%d words have at least 1 vowel and the letter 't'\n\n", count);
 }

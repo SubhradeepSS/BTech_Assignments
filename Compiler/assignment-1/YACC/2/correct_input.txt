@@ -1,6 +1,9 @@
-if(a<5) {
+if (x<5) {
 	a=a+5;
 } 
-else {
+else if (x>5) {
 	b=b+5;
+}
+else {
+	c=c+5;
 }

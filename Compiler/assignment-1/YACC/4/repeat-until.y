@@ -1,24 +1,20 @@
 %{
-	#include<stdio.h>
+	#include <stdio.h>
+    #include <stdlib.h>
     int yylex(void);
     void yyerror(const char *str);
 %}
 
-%token NUMBER ID IF ELSE AND OR NOT LT GT LE GE EQ NE ADD SUB EQU MUL DIV SC OB CB OP CP INCR DECR
-%nonassoc IFX
-%nonassoc ELSE
-
+%token NUMBER ID REPEAT UNTIL AND OR NOT LT GT LE GE EQ NE ADD SUB EQU MUL DIV SC OB CB OP CP INCR DECR
 
 %%
 
-statement: 
-  IF OP cond CP statement %prec IFX |
-  IF OP cond CP statement ELSE statement |
-  body ;
-body:	OB stmts CB ;
+repeat:	REPEAT body UNTIL cond SC { printf("No error in repeat-until syntax for given input\n"); exit(0); }
+body: stmts |
+	stmt SC ;
 stmts:	stmt SC stmts |
 	stmt SC |
-	statement ;
+    repeat
 cond:	c AND cond |
 	c OR cond |
 	c ;
@@ -35,19 +31,17 @@ f:	ID |
 	NUMBER;
 relop:	LT | GT | LE | GE | EQ | NE;
 		  	
-
 %%
 
 
 #include "lex.yy.c"
 
 void yyerror(const char *str) {
-	printf("Error in if else statement for given input\n");
+	printf("Error in repeat-until syntax for given input\n");
 }
 
 int main(int argc, char *argv[]) {
     yyin = fopen(argv[1], "r");
-    if (yyparse() == 0) 
-      printf("No error in if else statement for given input\n");
+    yyparse();
     fclose(yyin);
 }

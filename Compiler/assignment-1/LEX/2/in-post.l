@@ -47,6 +47,7 @@ int yywrap(){
 }
 
 int main(){
+    printf("\n\nOutput postfix expression: ");
     yylex();
 
     for(int i=top_idx-1; i>=0; i--) {
@@ -73,11 +74,12 @@ void push(char c){
 
 int priority(char c){
     switch(c){
-        case '(':return 0;
-        case ')':return 0;
-        case '+':return 1;
-        case '-':return 1;
-        case '*':return 2;
-        case '/':return 2;
+        case '(': return 0;
+        case ')': return 0;
+        case '+': return 1;
+        case '-': return 1;
+        case '*': return 2;
+        case '/': return 2;
+        case '^': return 3;
     }
 }

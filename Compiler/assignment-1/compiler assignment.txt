@@ -8,7 +8,7 @@ Write a LEX program to do the following (Separate programs) (Any FOUR)
 
 3. Convert # define construct to functions
 
-4. Convert for() construct to do-while ()
+4. ✅Convert for() construct to do-while ()
 
 5. ✅Convert a infix expression to prefix expression
 
@@ -20,4 +20,4 @@ Write a YACC program to do the following:
 1. ✅Evaluate the postfix expression 
 2. ✅Validate the if-else - if construct
 3. ✅Validate the switch-case construct
-4. Validate the PASCAL syntax repeat - until
+4. ✅Validate the PASCAL syntax repeat - until
