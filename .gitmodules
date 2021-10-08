@@ -1,0 +1,12 @@
+[submodule "DBMS/sql-codes"]
+	path = DBMS/sql-codes
+	url = https://github.com/SubhradeepSS/sql-codes
+[submodule "OS-Project"]
+	path = OS-Project
+	url = https://github.com/SubhradeepSS/OS-Project
+[submodule "Dapa-Assignment"]
+	path = Dapa-Assignment
+	url = https://github.com/Waryserpant122/Dapa-Assignment
+[submodule "Compiler/lex-yacc"]
+	path = Compiler/lex-yacc
+	url = https://github.com/SubhradeepSS/lex-yacc

@@ -1,8 +1,0 @@
-switch (x) 
-   { 
-       case 1 : a=a+5; 
-               break; 
-       case 2 : b=b+5; 
-                break; 
-       case 3 : c=c+5; 
-               break;    

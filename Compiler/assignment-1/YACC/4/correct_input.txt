@@ -1,4 +1,0 @@
-repeat
-   sum := sum + number;
-   number := number - 2;
-until number = 0;

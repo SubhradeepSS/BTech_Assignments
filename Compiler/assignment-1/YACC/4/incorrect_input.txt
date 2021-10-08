@@ -1,3 +1,0 @@
-repeat
-   sum := sum + number;
-   number := number - 2;
